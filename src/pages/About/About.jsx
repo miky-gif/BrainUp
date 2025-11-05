@@ -6,8 +6,8 @@ const About = () => {
   const team = [
     {
       id: 1,
-      name: 'Jean Dupont',
-      role: 'Fondateur & CEO',
+      name: 'Micheal Domguia Wawo',
+      role: 'Responsable Technique',
       description: 'Expert en développement web avec 10 ans d\'expérience',
       image: '/team/ceo.jpg', // Remplacer par vos vraies photos
       linkedin: 'https://linkedin.com',
@@ -15,16 +15,16 @@ const About = () => {
     },
     {
       id: 2,
-      name: 'Marie Martin',
-      role: 'Directrice Pédagogique',
-      description: 'Spécialiste en pédagogie numérique et formation',
+      name: 'Rayan Prevert Ketchatcham',
+      role: 'Responsable de la communication & Digital',
+      description: 'Ingenieur des Travaux des Telecom Option Informatique et Reseaux',
       image: '/team/directrice.jpg',
       linkedin: 'https://linkedin.com',
       email: 'marie@brainup-tech.cm'
     },
     {
       id: 3,
-      name: 'Paul Bernard',
+      name: 'Camille Mouthe Megue',
       role: 'Formateur Senior',
       description: 'Expert en infographie et design graphique',
       image: '/team/formateur1.jpg',
@@ -46,7 +46,7 @@ const About = () => {
               À Propos de BrainUp Technology
             </h1>
             <p className="text-xl text-gray-100 max-w-3xl mx-auto">
-              Réduire la fracture numérique à Bafia et former la prochaine génération de professionnels de l'informatique
+              Accélérer la digitalisation des entreprises et particuliers à travers des solutions innovantes et accessibles
             </p>
           </motion.div>
         </div>
@@ -65,14 +65,14 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-gray-700">
               <p>
-                BrainUp Technology est né d'une vision simple mais ambitieuse : rendre l'éducation informatique accessible à tous à Bafia et ses environs. Fondé par des passionnés de technologie et d'éducation, notre centre s'est rapidement imposé comme une référence dans la formation professionnelle.
+               BrainUp Technology est née d'une vision simple : démocratiser l'accès aux technologies digitales à Bafia.Tout a commencé lors des vacances scolaires, avec des formations en informatique pour les jeunes de Bafia. Face à l'enthousiasme et à la soif d'apprendre le numérique, nous avons rapidement compris qu'il y avait un réel besoin dans notre ville.
               </p>
               <p>
-                Depuis notre création, nous avons formé plus de 500 étudiants dans divers domaines de l'informatique, de la bureautique basique au développement web avancé, en passant par la robotique et la cybersécurité.
+                Au fil des formations, nous avons observé un besoin criant de digitalisation à Bafia. Des particuliers nous sollicitaient pour créer leurs sites web, développer leurs applications, gérer leur présence en ligne... Les entreprises locales cherchaient des solutions digitales mais ne savaient pas vers qui se tourner.
               </p>
               <p>
-                Notre approche pédagogique unique combine théorie et pratique intensive, avec un suivi personnalisé de chaque apprenant. Nous croyons fermement que chacun peut réussir dans le numérique avec les bons outils et le bon accompagnement.
-              </p>
+                C'est ainsi que BrainUp est devenue une startup tech complète. Notre connaissance du terrain nous a permis de proposer des solutions adaptées au contexte local. Aujourd'hui, nous accompagnons pres de 15 clients - entrepreneurs et particuliers - dans leur transformation numérique. Du développement web et mobile au community management, en passant par les réseaux informatiques et la formation, nous offrons une expertise 360° sur tous les besoins digitaux.
+               </p>
             </div>
           </motion.div>
 
@@ -87,14 +87,14 @@ const About = () => {
               <Target className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Notre Mission</h3>
               <p className="text-sm text-gray-600">
-                Réduire la fracture numérique par des formations accessibles et de qualité
+                Démocratiser l'accès aux technologies digitales
               </p>
             </div>
             <div className="card text-center">
               <Eye className="w-12 h-12 text-secondary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Notre Vision</h3>
               <p className="text-sm text-gray-600">
-                Faire de Bafia un hub technologique reconnu au Cameroun
+                Etre leader dans le domaine et impacte les entreprises de notre entourage 
               </p>
             </div>
             <div className="card text-center">
@@ -108,7 +108,7 @@ const About = () => {
               <Award className="w-12 h-12 text-primary-600 mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Notre Engagement</h3>
               <p className="text-sm text-gray-600">
-                Former des professionnels compétents et employables
+                Solutions de qualité et accompagnement continu
               </p>
             </div>
           </motion.div>

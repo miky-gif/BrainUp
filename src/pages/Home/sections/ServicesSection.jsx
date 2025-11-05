@@ -1,35 +1,71 @@
-import { GraduationCap, ShoppingBag, Wrench } from 'lucide-react'
+import { Palette, Code, Smartphone, Network, Wrench, Share2, GraduationCap } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: GraduationCap,
-      title: 'Formations Informatiques',
-      description: 'Plus de 15 formations professionnelles dans tous les domaines de l\'informatique : développement, design, réseaux, robotique et plus.',
-      features: ['Formations certifiantes', 'Formateurs expérimentés', 'Pratique intensive', 'Suivi personnalisé'],
-      link: '/formations',
+      icon: Palette,
+      title: 'Design & Création Graphique',
+      description: 'Design d\'interfaces modernes, identité visuelle, logos, supports marketing. Créez une image professionnelle qui marque les esprits.',
+      features: ['UI/UX Design professionnel', 'Identité visuelle & branding', 'Design réactif et moderne', 'Supports marketing percutants'],
+      link: '/services/design',
+      color: 'primary',
+      gradient: 'from-purple-500 to-pink-600'
+    },
+    {
+      icon: Code,
+      title: 'Développement Web',
+      description: 'Sites web vitrine, e-commerce, applications web sur mesure. Du concept au déploiement, nous créons des solutions web performantes.',
+      features: ['Sites responsive et modernes', 'E-commerce & plateformes web', 'Applications web complexes', 'Optimisation SEO incluse'],
+      link: '/services/web',
       color: 'primary',
       gradient: 'from-primary-500 to-primary-600'
     },
     {
-      icon: ShoppingBag,
-      title: 'Vente d\'Équipements',
-      description: 'Ordinateurs, périphériques et accessoires informatiques de qualité à des prix compétitifs pour accompagner votre apprentissage.',
-      features: ['Prix compétitifs', 'Matériel de qualité', 'Garantie incluse', 'Livraison disponible'],
-      link: '/boutique',
+      icon: Smartphone,
+      title: 'Développement Mobile',
+      description: 'Applications mobiles natives et multiplateformes (iOS & Android). Transformez vos idées en apps performantes et intuitives.',
+      features: ['Apps Android & iOS', 'Design intuitif et fluide', 'Performance optimisée', 'Publication sur les stores'],
+      link: '/services/mobile',
       color: 'secondary',
-      gradient: 'from-secondary-500 to-secondary-600'
+      gradient: 'from-blue-500 to-cyan-600'
     },
     {
-      icon: Wrench,
-      title: 'Maintenance Informatique',
-      description: 'Service de réparation et maintenance pour tous vos équipements informatiques. Diagnostic gratuit et intervention rapide.',
-      features: ['Diagnostic gratuit', 'Réparation rapide', 'Pièces d\'origine', 'Garantie service'],
-      link: '/contact',
+      icon: Network,
+      title: 'Réseaux & Infrastructure',
+      description: 'Installation, configuration et sécurisation de réseaux informatiques. Infrastructures fiables pour votre entreprise.',
+      features: ['Configuration réseau complète', 'Sécurité informatique', 'Serveurs & infrastructure cloud', 'Support technique continu'],
+      link: '/services/reseaux',
       color: 'accent',
-      gradient: 'from-accent-500 to-accent-600'
+      gradient: 'from-green-500 to-emerald-600'
+    },
+    // {
+    //   icon: Wrench,
+    //   title: 'Maintenance & Support',
+    //   description: 'Réparation, maintenance préventive et support technique pour tous vos équipements. Gardez vos systèmes opérationnels 24/7.',
+    //   features: ['Diagnostic gratuit', 'Réparation rapide garantie', 'Maintenance préventive', 'Support technique réactif'],
+    //   link: '/services/maintenance',
+    //   color: 'accent',
+    //   gradient: 'from-orange-500 to-red-600'
+    // },
+    {
+      icon: Share2,
+      title: 'Community Management',
+      description: 'Gestion professionnelle de votre présence digitale. Boostez votre visibilité et vos ventes grâce aux réseaux sociaux.',
+      features: ['Gestion réseaux sociaux', 'Création de contenu engageant', 'Stratégie marketing digital', 'Augmentation des ventes'],
+      link: '/services/community',
+      color: 'secondary',
+      gradient: 'from-pink-500 to-rose-600'
+    },
+    {
+      icon: GraduationCap,
+      title: 'Formations Professionnelles',
+      description: 'Plus de 15 formations certifiantes en informatique. Développez vos compétences ou celles de vos équipes.',
+      features: ['Formations certifiantes', 'Programmes personnalisés', 'Pratique intensive', 'Formateurs expérimentés'],
+      link: '/formations',
+      color: 'primary',
+      gradient: 'from-indigo-500 to-purple-600'
     }
   ]
 
@@ -47,7 +83,7 @@ const ServicesSection = () => {
             Nos <span className="text-gradient">Services</span>
           </h2>
           <p className="section-subtitle">
-            BrainUp Technology vous accompagne dans votre parcours numérique avec des services complets
+            BrainUp Technology vous accompagne dans votre transformation digitale avec une gamme complète de services
           </p>
         </motion.div>
 
