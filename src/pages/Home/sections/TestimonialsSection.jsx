@@ -16,10 +16,10 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Ce que disent nos <span className="text-gradient">étudiants</span>
+            Ce que disent nos  <span className="text-gradient">clients</span>
           </h2>
           <p className="section-subtitle">
-            Découvrez les témoignages de ceux qui ont transformé leur vie avec BrainUp Technology
+            Découvrez les témoignages de ceux qui nous ont fait confiance
           </p>
         </motion.div>
 

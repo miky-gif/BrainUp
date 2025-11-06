@@ -22,40 +22,40 @@ const CTASection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
             <Sparkles className="w-4 h-4 text-yellow-300" />
-            <span className="text-sm font-medium">Commencez votre transformation aujourd'hui</span>
+            <span className="text-sm font-medium">Prêt à digitaliser votre projet ?</span>
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Prêt à transformer votre avenir ?
+            Transformez votre vision en réalité digitale
           </h2>
 
           <p className="text-lg md:text-xl text-gray-100 mb-10 leading-relaxed">
-            Rejoignez des centaines d'étudiants qui ont déjà commencé leur parcours vers le succès. 
-            Inscrivez-vous dès maintenant et bénéficiez de formations de qualité à Bafia.
+            Que vous ayez besoin d'un site web, d'une application mobile, d'un accompagnement digital ou de formations, 
+            BrainUp Technology est votre partenaire idéal à Bafia.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/inscription" className="btn bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 text-lg px-8 py-4">
-              S'inscrire maintenant
+            <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 text-lg px-8 py-4">
+              Demandez votre devis gratuit
               <ArrowRight className="w-5 h-5" />
             </Link>
-            <Link to="/contact" className="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 text-lg px-8 py-4">
-              Nous contacter
-            </Link>
+            <a href="tel:+237XXXXXXXXX" className="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 text-lg px-8 py-4">
+              Appelez-nous maintenant
+            </a>
           </div>
 
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <div className="text-3xl font-bold text-yellow-300 mb-1">100%</div>
-              <div className="text-sm text-gray-200">Pratique</div>
+              <div className="text-sm text-gray-200">Solutions sur mesure</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <div className="text-3xl font-bold text-yellow-300 mb-1">24/7</div>
-              <div className="text-sm text-gray-200">Support</div>
+              <div className="text-sm text-gray-200">Support disponible</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <div className="text-3xl font-bold text-yellow-300 mb-1">∞</div>
-              <div className="text-sm text-gray-200">Opportunités</div>
+              <div className="text-sm text-gray-200">Possibilités digitales</div>
             </div>
           </div>
         </motion.div>

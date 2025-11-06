@@ -128,8 +128,8 @@ const Contact = () => {
               <Phone className="w-8 h-8 text-secondary-600 mb-3" />
               <h3 className="font-bold text-gray-900 mb-2">Téléphone</h3>
               <p className="text-gray-700">
-                +237 690 00 00 00<br />
-                +237 670 00 00 00
+                +237 6 55 51 11 08 <br />
+                +237 6 98 17 89 25
               </p>
             </div>
 

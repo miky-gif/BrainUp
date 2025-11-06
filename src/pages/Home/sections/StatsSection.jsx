@@ -1,4 +1,4 @@
-import { Users, GraduationCap, Award, Star } from 'lucide-react'
+import { Users, Briefcase, CheckCircle, Star } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
@@ -6,30 +6,30 @@ const StatsSection = () => {
   const stats = [
     {
       icon: Users,
-      value: 500,
+      value: 30,
       suffix: '+',
-      label: 'Étudiants Formés',
+      label: 'Clients satisfaits',
       color: 'primary'
     },
     {
-      icon: GraduationCap,
+      icon: Briefcase,
       value: 15,
       suffix: '+',
-      label: 'Formations Disponibles',
+      label: 'Services digitaux',
       color: 'secondary'
     },
     {
-      icon: Award,
-      value: 450,
+      icon: CheckCircle,
+      value: 50,
       suffix: '+',
-      label: 'Attestations Délivrées',
+      label: 'Projets livrés',
       color: 'accent'
     },
     {
       icon: Star,
       value: 95,
       suffix: '%',
-      label: 'Taux de Satisfaction',
+      label: 'Taux de satisfaction',
       color: 'primary'
     }
   ]
@@ -78,10 +78,10 @@ const StatsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-            BrainUp en <span className="text-yellow-300">Chiffres</span>
+            Brainup en  <span className=" text-yellow-300">chiffres</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto">
-            Des résultats concrets qui témoignent de notre engagement envers l'excellence
+            Des résultats concrets qui témoignent de notre engagement
           </p>
         </motion.div>
 

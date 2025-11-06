@@ -18,8 +18,8 @@ const Home = () => {
       <PopularFormations />
       <StatsSection />
       <TestimonialsSection />
-      <GallerySection />
-      <PartnersSection />
+      {/* <GallerySection />
+      <PartnersSection /> */}
       <ConcoursSection />
       <CTASection />
     </div>

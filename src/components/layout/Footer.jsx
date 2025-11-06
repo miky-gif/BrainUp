@@ -32,19 +32,21 @@ const Footer = () => {
       { name: 'Robotique', path: '/formations?category=robotique' },
       { name: 'Réseaux', path: '/formations?category=reseaux' },
     ],
+    services: [
+      { name: 'Développement Web', path: '/services/web' },
+      { name: 'Développement Mobile', path: '/services/mobile' },
+      { name: 'Design & Branding', path: '/services/design' },
+      { name: 'Réseaux & Infrastructure', path: '/services/reseaux' },
+      { name: 'Community Management', path: '/services/community' },
+      { name: 'Maintenance Informatique', path: '/services/maintenance' },
+      { name: 'Formations Pro', path: '/formations' },
+    ],
     entreprise: [
       { name: 'À propos', path: '/about' },
       { name: 'Nos formateurs', path: '/about#formateurs' },
       { name: 'Témoignages', path: '/about#temoignages' },
       { name: 'Blog', path: '/blog' },
       { name: 'Contact', path: '/contact' },
-    ],
-    services: [
-      { name: 'Formations', path: '/formations' },
-      { name: 'Concours', path: '/concours' },
-      { name: 'Boutique', path: '/boutique' },
-      { name: 'E-learning', path: '/dashboard/courses' },
-      { name: 'Attestations', path: '/dashboard/certificates' },
     ]
   }
 
@@ -59,10 +61,10 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       {/* Main Footer */}
-      <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container-custom py-8">
+        <div className="flex flex-wrap justify-between gap-8">
           {/* About Section */}
-          <div>
+          <div className="w-full md:w-auto md:max-w-xs">
             <div className="flex items-center gap-3 mb-4">
               <img 
                 src="/logo.png" 
@@ -73,12 +75,11 @@ const Footer = () => {
                 <h3 className="text-xl font-display font-bold text-white">
                   BrainUp Technology
                 </h3>
-                <p className="text-xs text-gray-400">Formation & Innovation</p>
+                <p className="text-xs text-gray-400">Votre Partenaire Digital </p>
               </div>
             </div>
             <p className="text-sm mb-4">
-              Centre de formation en informatique à Bafia, Cameroun. 
-              Notre mission : réduire la fracture numérique par des formations accessibles et de qualité.
+              Startup innovante spécialisée dans les solutions digitales : développement web & mobile, design, réseaux, maintenance, community management et formations professionnelles.
             </p>
             <div className="flex gap-2">
               {socialLinks.map((social, index) => (
@@ -94,9 +95,25 @@ const Footer = () => {
               ))}
             </div>
           </div>
+    {/* Services */}
+              <div className="w-full sm:w-auto">
+                <h4 className="text-lg font-display font-bold text-white mb-4">Nos Services</h4>
+                <ul className="space-y-2">
+                  {footerLinks.services.map((service, index) => (
+                    <li key={index}>
+                      <Link 
+                        to={service.path}
+                        className="text-sm hover:text-primary-400 transition-colors"
+                      >
+                        {service.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
           {/* Formations */}
-          <div>
+          <div className="w-full sm:w-auto">
             <h4 className="text-lg font-display font-bold text-white mb-4">Formations</h4>
             <ul className="space-y-2">
               {footerLinks.formations.map((link) => (
@@ -112,6 +129,7 @@ const Footer = () => {
             </ul>
           </div>
 
+         
           {/* Entreprise */}
           <div>
             <h4 className="text-lg font-display font-bold text-white mb-4">Entreprise</h4>
@@ -130,26 +148,26 @@ const Footer = () => {
           </div>
 
           {/* Contact & Newsletter */}
-          <div>
+          <div className="w-full sm:w-auto">
             <h4 className="text-lg font-display font-bold text-white mb-4">Contact</h4>
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-start gap-2">
+            <div className="space-y-2 mb-4">
+              <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">Bafia, Région du Centre, Cameroun</span>
-              </li>
-              <li className="flex items-center gap-2">
+              </div>
+              <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-primary-400 flex-shrink-0" />
                 <a href="tel:+237690000000" className="text-sm hover:text-primary-400 transition-colors">
-                  +237 690 00 00 00
+                  (+237) 6 55 51 11 08 / 6 98 17 89 25
                 </a>
-              </li>
-              <li className="flex items-center gap-2">
+              </div>
+              <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
                 <a href="mailto:contact@brainup-tech.cm" className="text-sm hover:text-primary-400 transition-colors">
                   contact@brainup-tech.cm
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
 
             {/* Newsletter */}
             <div>

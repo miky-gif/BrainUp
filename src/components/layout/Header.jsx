@@ -14,6 +14,21 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
+    const handleLinkClick = (e, path, hash) => {
+      if (hash) {
+        e.preventDefault()
+        if (window.location.pathname === '/') {
+          // Si on est déjà sur la page d'accueil, on fait défiler jusqu'à la section
+          const element = document.querySelector(hash)
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+          }
+        } else {
+          // Sinon, on redirige vers la page d'accueil avec le hash
+          window.location.href = `/${hash}`
+        }
+      }
+    }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -26,6 +41,7 @@ const Header = () => {
   const navLinks = [
     { name: 'Accueil', path: '/' },
     { name: 'À propos', path: '/about' },
+    { name: 'Services', path: '/services' },
     { 
       name: 'Formations', 
       path: '/formations',
@@ -41,7 +57,6 @@ const Header = () => {
         { name: 'Maintenance', path: '/formations?category=maintenance' },
       ]
     },
-    { name: 'Concours', path: '/concours' },
     { name: 'Boutique', path: '/boutique' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
@@ -102,12 +117,35 @@ const Header = () => {
                   </>
                 ) : (
                   <Link
-                    to={link.path}
+                    to={link.hash ? `/${link.hash}` : link.path}
                     className={`font-medium transition-colors ${
-                      location.pathname === link.path
+                      (link.path === '/' && location.pathname === '/') || 
+                      (link.path !== '/' && location.pathname === link.path)
                         ? 'text-primary-600'
                         : 'text-gray-700 hover:text-primary-600'
                     }`}
+                    onClick={(e) => {
+                      if (link.path === '/' && !link.hash) {
+                        // Pour le bouton Accueil, on laisse le comportement par défaut
+                        // qui est de naviguer vers la page d'accueil
+                        if (window.location.pathname === '/') {
+                          e.preventDefault()
+                          window.scrollTo({ top: 0, behavior: 'smooth' })
+                        }
+                      } else if (link.hash) {
+                        e.preventDefault()
+                        if (window.location.pathname === '/') {
+                          // Si on est déjà sur la page d'accueil, on fait défiler jusqu'à la section
+                          const element = document.querySelector(link.hash)
+                          if (element) {
+                            element.scrollIntoView({ behavior: 'smooth' })
+                          }
+                        } else {
+                          // Sinon, on redirige vers la page d'accueil avec le hash
+                          window.location.href = `/${link.hash}`
+                        }
+                      }
+                    }}
                   >
                     {link.name}
                   </Link>
@@ -198,12 +236,30 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      to={link.path}
+                      to={link.hash ? `/${link.hash}` : link.path}
                       className={`block px-4 py-2 rounded-lg transition-colors ${
-                        location.pathname === link.path
+                        (link.path === '/' && location.pathname === '/') || 
+                        (link.path !== '/' && location.pathname === link.path)
                           ? 'bg-primary-50 text-primary-600'
                           : 'text-gray-700 hover:bg-gray-100'
                       }`}
+                      onClick={(e) => {
+                        if (link.path === '/' && !link.hash) {
+                          e.preventDefault()
+                          window.scrollTo({ top: 0, behavior: 'smooth' })
+                        } else if (link.hash) {
+                          e.preventDefault()
+                          setIsMobileMenuOpen(false)
+                          if (window.location.pathname === '/') {
+                            const element = document.querySelector(link.hash)
+                            if (element) {
+                              element.scrollIntoView({ behavior: 'smooth' })
+                            }
+                          } else {
+                            window.location.href = `/${link.hash}`
+                          }
+                        }
+                      }}
                     >
                       {link.name}
                     </Link>

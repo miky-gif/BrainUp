@@ -25,6 +25,7 @@ import AdminCertificates from './pages/Admin/AdminCertificates'
 import PrivateRoute from './components/common/PrivateRoute'
 import AdminRoute from './components/common/AdminRoute'
 import NotFound from './pages/NotFound'
+import Services from './pages/Services/Services'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="inscription/:formationId" element={<Inscription />} />
         <Route path="concours" element={<Concours />} />
         <Route path="boutique" element={<Boutique />} />
+        <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
         <Route path="blog" element={<Blog />} />
         <Route path="blog/:id" element={<BlogPost />} />

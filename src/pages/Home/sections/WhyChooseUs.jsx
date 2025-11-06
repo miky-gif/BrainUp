@@ -1,37 +1,37 @@
-import { Award, Users, Clock, TrendingUp, Heart, Shield } from 'lucide-react'
+import { Code, Users, Zap, Target, CheckCircle, Ruler } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const WhyChooseUs = () => {
   const reasons = [
     {
-      icon: Award,
-      title: 'Attestations Officielles',
-      description: 'Recevez une attestation reconnue à la fin de chaque formation'
+      icon: Ruler,
+      title: 'Solutions Sur Mesure',
+      description: 'Chaque projet est unique. Nous créons des solutions parfaitement adaptées à vos besoins et objectifs.'
+    },
+    {
+      icon: Code,
+      title: 'Expertise Technique',
+      description: 'Une équipe polyvalente maîtrisant les dernières technologies et tendances du digital.'
     },
     {
       icon: Users,
-      title: 'Formateurs Expérimentés',
-      description: 'Apprenez avec des professionnels passionnés et pédagogues'
+      title: 'Accompagnement Complet',
+      description: 'De la conception à la maintenance, nous restons à vos côtés tout au long de votre projet.'
     },
     {
-      icon: Clock,
-      title: 'Horaires Flexibles',
-      description: 'Choisissez les créneaux qui correspondent à votre emploi du temps'
+      icon: Target,
+      title: 'Approche Pratique',
+      description: 'Des solutions concrètes, testées et directement applicables pour votre business.'
     },
     {
-      icon: TrendingUp,
-      title: 'Formations Pratiques',
-      description: 'Projets réels et compétences directement applicables'
-    },
-    {
-      icon: Heart,
-      title: 'Suivi Personnalisé',
-      description: 'Accompagnement individuel tout au long de votre parcours'
-    },
-    {
-      icon: Shield,
+      icon: CheckCircle,
       title: 'Qualité Garantie',
-      description: 'Programmes actualisés et alignés sur les besoins du marché'
+      description: 'Technologies modernes, standards professionnels et résultats mesurables.'
+    },
+    {
+      icon: Zap,
+      title: 'Rapidité d\'Exécution',
+      description: 'Mise en œuvre rapide et efficace de vos solutions digitales.'
     }
   ]
 
@@ -46,10 +46,10 @@ const WhyChooseUs = () => {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Pourquoi choisir <span className="text-gradient">BrainUp Technology</span> ?
+            POURQUOI CHOISIR <span className="text-gradient">BRAINUP TECHNOLOGY</span> ?
           </h2>
-          <p className="section-subtitle">
-            Nous nous engageons à vous offrir la meilleure expérience de formation
+          <p className="section-subtitle max-w-3xl mx-auto">
+            Nous nous engageons à vous offrir des solutions digitales d'excellence
           </p>
         </motion.div>
 
