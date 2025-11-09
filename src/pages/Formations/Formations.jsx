@@ -25,9 +25,9 @@ const Formations = () => {
     const matchesLevel = selectedLevel === 'all' || formation.level.includes(selectedLevel)
     
     let matchesPrice = true
-    if (priceRange === 'low') matchesPrice = formation.price < 60000
-    else if (priceRange === 'medium') matchesPrice = formation.price >= 60000 && formation.price < 120000
-    else if (priceRange === 'high') matchesPrice = formation.price >= 120000
+    if (priceRange === 'low') matchesPrice = formation.price < 40000
+    else if (priceRange === 'medium') matchesPrice = formation.price >= 40000 && formation.price < 60000
+    else if (priceRange === 'high') matchesPrice = formation.price >= 60000
 
     return matchesSearch && matchesCategory && matchesLevel && matchesPrice
   })
@@ -133,9 +133,9 @@ const Formations = () => {
                   className="input-field"
                 >
                   <option value="all">Tous les prix</option>
-                  <option value="low">Moins de 60 000 FCFA</option>
-                  <option value="medium">60 000 - 120 000 FCFA</option>
-                  <option value="high">Plus de 120 000 FCFA</option>
+                  <option value="low">Moins de 40 000 FCFA</option>
+                  <option value="medium">40 000 - 60 000 FCFA</option>
+                  <option value="high">Plus de 60 000 FCFA</option>
                 </select>
               </div>
 

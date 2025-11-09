@@ -40,7 +40,7 @@ export const formationCategories = [
     name: 'Maintenance Informatique',
     icon: 'Wrench',
     description: 'Réparez et entretenez les équipements'
-  }
+  },
 ]
 
 export const formations = [
@@ -51,7 +51,7 @@ export const formations = [
     category: 'infographie',
     level: 'Débutant à Avancé',
     duration: '3 mois',
-    price: 75000,
+    price: 50000,
     image: '/images/formations/photoshop.jpg',
     description: 'Maîtrisez Photoshop de A à Z pour créer des designs professionnels',
     shortDescription: 'Retouche photo et design graphique professionnel',
@@ -81,7 +81,7 @@ export const formations = [
     category: 'infographie',
     level: 'Débutant à Avancé',
     duration: '3 mois',
-    price: 75000,
+    price: 50000,
     image: '/images/formations/illustrator.jpg',
     description: 'Créez des illustrations vectorielles et logos professionnels',
     shortDescription: 'Design vectoriel et création de logos',
@@ -105,77 +105,16 @@ export const formations = [
     certification: true,
     popular: false
   },
-  {
-    id: 'video-editing',
-    title: 'Montage Vidéo Professionnel',
-    category: 'infographie',
-    level: 'Intermédiaire',
-    duration: '2 mois',
-    price: 60000,
-    image: '/images/formations/video.jpg',
-    description: 'Montez et éditez des vidéos professionnelles avec Premiere Pro',
-    shortDescription: 'Montage vidéo avec Adobe Premiere Pro',
-    prerequisites: 'Connaissances de base en informatique',
-    objectives: [
-      'Maîtriser Premiere Pro',
-      'Monter des vidéos professionnelles',
-      'Ajouter des effets et transitions',
-      'Exporter pour différentes plateformes'
-    ],
-    program: [
-      'Interface Premiere Pro',
-      'Montage de base',
-      'Transitions et effets',
-      'Correction colorimétrique',
-      'Audio et son',
-      'Exportation optimisée',
-      'Projet final'
-    ],
-    schedule: 'Samedi - 9h-13h',
-    certification: true,
-    popular: true
-  },
 
   // Développement Web et Mobile
-  {
-    id: 'web-fullstack',
-    title: 'Développement Web Full Stack',
-    category: 'web-mobile',
-    level: 'Débutant à Avancé',
-    duration: '6 mois',
-    price: 150000,
-    image: '/images/formations/fullstack.jpg',
-    description: 'Devenez développeur web full stack avec React, Node.js et MongoDB',
-    shortDescription: 'Formation complète en développement web moderne',
-    prerequisites: 'Bases en informatique',
-    objectives: [
-      'Maîtriser HTML, CSS, JavaScript',
-      'Développer avec React.js',
-      'Créer des APIs avec Node.js',
-      'Gérer des bases de données',
-      'Déployer des applications web'
-    ],
-    program: [
-      'HTML5 et CSS3 avancé',
-      'JavaScript moderne (ES6+)',
-      'React.js et hooks',
-      'Node.js et Express',
-      'MongoDB et bases de données',
-      'API REST et GraphQL',
-      'Déploiement et DevOps',
-      'Projet final complet'
-    ],
-    schedule: 'Lundi à Vendredi - 9h-12h',
-    certification: true,
-    popular: true
-  },
+ 
   {
     id: 'react-native',
     title: 'Développement Mobile avec React Native',
     category: 'web-mobile',
     level: 'Intermédiaire',
-    duration: '4 mois',
-    price: 120000,
+    duration: '3 mois',
+    price: 50000,
     image: '/images/formations/mobile.jpg',
     description: 'Créez des applications mobiles iOS et Android avec React Native',
     shortDescription: 'Applications mobiles cross-platform',
@@ -240,8 +179,8 @@ export const formations = [
     title: 'Programmation Python',
     category: 'programmation',
     level: 'Débutant à Avancé',
-    duration: '4 mois',
-    price: 100000,
+    duration: '3 mois',
+    price: 60000,
     image: '/images/formations/python.jpg',
     description: 'Apprenez Python pour le développement, data science et automation',
     shortDescription: 'Python pour tous les usages',
@@ -272,8 +211,8 @@ export const formations = [
     title: 'Programmation Java',
     category: 'programmation',
     level: 'Intermédiaire',
-    duration: '5 mois',
-    price: 110000,
+    duration: '3 mois',
+    price: 60000,
     image: '/images/formations/java.jpg',
     description: 'Développez des applications robustes avec Java',
     shortDescription: 'Java pour applications d\'entreprise',
@@ -306,8 +245,8 @@ export const formations = [
     title: 'Robotique avec Arduino',
     category: 'robotique',
     level: 'Débutant',
-    duration: '3 mois',
-    price: 80000,
+    duration: '2 mois',
+    price: 40000,
     image: '/images/formations/arduino.jpg',
     description: 'Créez vos propres robots et objets connectés avec Arduino',
     shortDescription: 'Robotique et objets connectés',
@@ -338,8 +277,8 @@ export const formations = [
     title: 'Intelligence Artificielle et Machine Learning',
     category: 'robotique',
     level: 'Avancé',
-    duration: '6 mois',
-    price: 180000,
+    duration: '2 mois',
+    price: 30000,
     image: '/images/formations/ai.jpg',
     description: 'Plongez dans l\'IA et créez des modèles de machine learning',
     shortDescription: 'IA et apprentissage automatique',
@@ -372,8 +311,8 @@ export const formations = [
     title: 'Certification Cisco CCNA',
     category: 'reseaux',
     level: 'Intermédiaire',
-    duration: '5 mois',
-    price: 200000,
+    duration: '3 mois',
+    price: 60000,
     image: '/images/formations/cisco.jpg',
     description: 'Préparez la certification CCNA et devenez administrateur réseau',
     shortDescription: 'Administration réseau Cisco',
@@ -399,39 +338,7 @@ export const formations = [
     certification: true,
     popular: true
   },
-  {
-    id: 'cybersecurity',
-    title: 'Cybersécurité et Ethical Hacking',
-    category: 'reseaux',
-    level: 'Avancé',
-    duration: '6 mois',
-    price: 220000,
-    image: '/images/formations/security.jpg',
-    description: 'Devenez expert en sécurité informatique et ethical hacking',
-    shortDescription: 'Sécurité informatique avancée',
-    prerequisites: 'Connaissances en réseaux et systèmes',
-    objectives: [
-      'Maîtriser la cybersécurité',
-      'Effectuer des tests de pénétration',
-      'Sécuriser les infrastructures',
-      'Analyser les vulnérabilités',
-      'Répondre aux incidents'
-    ],
-    program: [
-      'Fondamentaux de la sécurité',
-      'Cryptographie',
-      'Tests de pénétration',
-      'Sécurité des applications',
-      'Sécurité réseau avancée',
-      'Forensics et investigation',
-      'Gestion des incidents',
-      'Projets pratiques'
-    ],
-    schedule: 'Mardi, Jeudi - 14h-18h',
-    certification: true,
-    popular: true
-  },
-
+  
   // Bureautique
   {
     id: 'microsoft-office',
@@ -471,7 +378,7 @@ export const formations = [
     category: 'bureautique',
     level: 'Avancé',
     duration: '2 mois',
-    price: 60000,
+    price: 30000,
     image: '/images/formations/excel.jpg',
     description: 'Devenez expert Excel avec Power BI et analyse de données',
     shortDescription: 'Excel avancé et analyse de données',
@@ -504,8 +411,8 @@ export const formations = [
     title: 'Maintenance Matérielle Informatique',
     category: 'maintenance',
     level: 'Débutant',
-    duration: '3 mois',
-    price: 70000,
+    duration: '2 mois',
+    price: 30000,
     image: '/images/formations/hardware.jpg',
     description: 'Apprenez à réparer et maintenir ordinateurs et périphériques',
     shortDescription: 'Réparation et maintenance PC',
@@ -531,38 +438,6 @@ export const formations = [
     certification: true,
     popular: true
   },
-  {
-    id: 'system-admin',
-    title: 'Administration Systèmes Windows/Linux',
-    category: 'maintenance',
-    level: 'Intermédiaire',
-    duration: '4 mois',
-    price: 120000,
-    image: '/images/formations/sysadmin.jpg',
-    description: 'Administrez des serveurs Windows et Linux en entreprise',
-    shortDescription: 'Administration de serveurs',
-    prerequisites: 'Connaissances de base en informatique',
-    objectives: [
-      'Installer et configurer serveurs',
-      'Gérer utilisateurs et permissions',
-      'Automatiser les tâches',
-      'Sauvegarder et restaurer',
-      'Surveiller et optimiser'
-    ],
-    program: [
-      'Introduction aux systèmes',
-      'Windows Server',
-      'Linux Ubuntu/CentOS',
-      'Active Directory',
-      'Scripts et automation',
-      'Virtualisation',
-      'Sauvegardes et DR',
-      'Monitoring et logs'
-    ],
-    schedule: 'Lundi, Mercredi, Vendredi - 14h-17h',
-    certification: true,
-    popular: false
-  }
 ]
 
 export const getFormationById = (id) => {

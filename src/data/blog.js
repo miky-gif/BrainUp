@@ -4,13 +4,13 @@ export const blogPosts = [
   //Parcours du Developpeur
 
   {
-    id: 'carriere-developpeur-web-2024',
+    id: 'carriere-developpeur-web-2025',
     title: 'Comment devenir développeur web en 2025 ?',
-    slug: 'carriere-developpeur-web-2024',
+    slug: 'carriere-developpeur-web-2025',
     category: 'Carrière',
     author: 'BrainUp Technology',
     authorImage: '/images/authors/brainup.jpg',
-    date: '2024-10-15',
+    date: '2025-01-15',
     readTime: '8 min',
     image: 'public/blog/dev-web.jpg',
     excerpt: 'Découvrez le parcours complet pour devenir développeur web en 2025, les compétences requises et les opportunités de carrière.',
@@ -277,7 +277,7 @@ export const blogPosts = [
     `,
     tags: ['Robotique', 'Éducation', 'Innovation'],
     featured: false
-  }
+  },
 ]
 
 
