@@ -135,5 +135,37 @@ export const previousWinners = [
     prize: 'Smartphone',
     date: '2024-09-30',
     image: '/images/winners/daniel.jpg'
+  },
+  {
+    id: 1,
+    name: 'Alice Mbarga',
+    concours: 'Concours Rentrée 2024',
+    prize: 'PC Portable',
+    date: '2024-09-30',
+    image: '/images/winners/alice.jpg'
+  },
+  {
+    id: 2,
+    name: 'Boris Ndjock',
+    concours: 'Challenge Coding 2023',
+    prize: 'MacBook Pro',
+    date: '2024-02-15',
+    image: '/images/winners/boris.jpg'
+  },
+  {
+    id: 3,
+    name: 'Clarisse Fouda',
+    concours: 'Concours Noël 2023',
+    prize: 'Tablette Samsung',
+    date: '2023-12-24',
+    image: '/images/winners/clarisse.jpg'
+  },
+  {
+    id: 4,
+    name: 'Daniel Owona',
+    concours: 'Concours Rentrée 2024',
+    prize: 'Smartphone',
+    date: '2024-09-30',
+    image: '/images/winners/daniel.jpg'
   }
 ]
